@@ -342,8 +342,16 @@ template {
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff"), url("Roboto-Regular.ttf") format("truetype");
+  font-family: "Playfair Display";
+  src: url("PlayfairDisplay-Medium.woff2") format("woff2"), url("PlayfairDisplay-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("PlayfairDisplay-Regular.woff2") format("woff2"), url("PlayfairDisplay-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -351,15 +359,7 @@ template {
 
 @font-face {
   font-family: "Roboto";
-  src: url("Roboto-Medium.woff2") format("woff2"), url("Roboto-Medium.woff") format("woff"), url("Roboto-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("Roboto-Bold.woff2") format("woff2"), url("Roboto-Bold.woff") format("woff"), url("Roboto-Bold.ttf") format("truetype");
+  src: url("Roboto-Bold.woff2") format("woff2"), url("Roboto-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -367,8 +367,32 @@ template {
 
 @font-face {
   font-family: "Roboto";
-  src: url("Roboto-Light.woff2") format("woff2"), url("Roboto-Light.woff") format("woff"), url("Roboto-Light.ttf") format("truetype");
+  src: url("Roboto-Light.woff2") format("woff2"), url("Roboto-Light.woff") format("woff");
   font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-MediumItalic.woff2") format("woff2"), url("Roboto-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("PlayfairDisplay-Medium.woff2") format("woff2"), url("PlayfairDisplay-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -409,7 +433,7 @@ img {
 }
 
 .wrapper {
-  width: 1000px;
+  width: 1030px;
   height: 700px;
   margin: 25px auto;
   padding: 40px 25px;
@@ -426,6 +450,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 110px;
 }
 
 .wrap-nav .wrap-nav__list {
@@ -494,5 +519,98 @@ img {
   color: rgba(83, 70, 70, 0.8);
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.wrap-box {
+  width: 470px;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.wrap-box .wrap-box__header {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+}
+
+.wrap-box .wrap-box__header::after {
+  display: inline-block;
+  position: relative;
+  top: -15px;
+  content: "";
+  width: 100px;
+  height: 4px;
+  background-color: #333333;
+}
+
+.wrap-box .wrap-box__desc {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Playfair Display", serif;
+}
+
+.wrap-box .wrap-box__desc--active {
+  font-weight: 600;
+}
+
+.wrap-aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrap-aside .wrap-aside__box .wrap-aside__iframe {
+  width: 190px;
+  height: 130px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.wrap-aside .wrap-aside__box .wrap-aside__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap-aside .wrap-aside__box .wrap-aside__desc {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(83, 70, 70, 0.8);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.wrap-aside .wrap-aside__box .wrap-aside__btn {
+  width: 17px;
+  height: 17px;
+  margin-left: 5px;
+}
+
+.wrap-aside .wrap-aside__box .wrap-aside__btn:hover {
+  opacity: 0.8;
+}
+
+.wrap-aside .wrap-aside__box .wrap-aside__btn:active {
+  opacity: 0.6;
+}
+
+.wrap-aside .wrap-aside__right {
+  margin-left: 40px;
+}
+
+.wrap-aside .wrap-aside__right .wrap-aisde-rigth__desc {
+  margin: 0;
+  width: 220px;
+  color: #2c2929;
+  line-height: 34px;
 }
 /*# sourceMappingURL=styles.css.map */
